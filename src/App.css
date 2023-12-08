@@ -28,9 +28,10 @@ body {
   font-weight: 400;
 
   background-image: url('./assets/pattern-rings.svg'),
-    url('./assets/image-profile-desktop.png'), url('./assets/pattern-rings.svg');
+    url('./assets/image-profile-desktop.jpeg'),
+    url('./assets/pattern-rings.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, 445px 720px, auto;
+  background-size: auto, 560px 720px, auto;
   background-position-x: -100px, 90%, 85vw;
   background-position-y: 140px, 0px, 1077px;
 }
