@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="container" id="home">
         <header>
           <div className="header-container">
             <h1 className="title">gilbertosilva</h1>
@@ -44,14 +44,23 @@ function App() {
             </p>
             <p>Eligible to work in the UK, EU and Brazil.</p>
             <div className="about-underline-contact">
-              <h3>Contact me</h3>
+              <h3>
+                <a href="#contact" target="_self" className="contact-link">
+                  Contact me
+                </a>
+              </h3>
             </div>
           </div>
+          <h2 className="techs">Techs</h2>
           <hr className="line" />
           <TechList />
           <div className="projects-header about">
             <h2>Projects</h2>
-            <p>Contact me</p>
+            <p>
+              <a href="#contact" target="_self" className="contact-link">
+                Contact me
+              </a>
+            </p>
           </div>
           <div className="projects-cards">
             {projects.map((project) => (
@@ -70,12 +79,40 @@ function App() {
               possible.
             </p>
           </div>
-          <div className="form-container">
+          <div className="form-container" id="contact">
             <ContactForm />
           </div>
         </div>
       </section>
-      Name Email Message Send message gilbertosilva
+
+      <footer>
+        <div className="footer-container">
+          <hr className="line" />
+          <div className="header-container">
+            <h4 className="title">
+              <a href="#home" target="_self" className="contact-link">
+                gilbertosilva
+              </a>
+            </h4>
+            <div className="icons">
+              <a
+                href="http://github.com/gilbertouk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={github} alt="Github icon" className="test" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gilbertoantonio/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedin} alt="LinkedIn icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

@@ -6,15 +6,19 @@ import { PiFileSql } from 'react-icons/pi';
 const TechList = () => {
   return (
     <div className="icons-container">
-      <IoLogoJavascript size={120} className="icons-container-item" />
-      <FaNode size={120} className="icons-container-item" />
-      <SiJest size={120} className="icons-container-item" />
-      <FaReact size={120} className="icons-container-item" />
-      <FaHtml5 size={120} className="icons-container-item" />
-      <FaCss3Alt size={120} className="icons-container-item" />
-      <PiFileSql size={120} className="icons-container-item" />
-      <SiPrisma size={120} className="icons-container-item" />
-      <SiMongodb size={120} className="icons-container-item" />
+      <IoLogoJavascript
+        size={120}
+        className="icons-container-item"
+        title="JavaScript"
+      />
+      <FaNode size={120} className="icons-container-item" title="NodeJS" />
+      <SiJest size={120} className="icons-container-item" title="Jest" />
+      <FaReact size={120} className="icons-container-item" title="React" />
+      <FaHtml5 size={120} className="icons-container-item" title="HTML5" />
+      <FaCss3Alt size={120} className="icons-container-item" title="CSS" />
+      <PiFileSql size={120} className="icons-container-item" title="SQL" />
+      <SiPrisma size={120} className="icons-container-item" title="PrismaORM" />
+      <SiMongodb size={120} className="icons-container-item" title="MongoDB" />
     </div>
   );
 };

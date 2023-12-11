@@ -47,6 +47,15 @@
   background-color: var(--Black);
 }
 
+.contact-link {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.contact-link:visited {
+  color: var(--White);
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -123,8 +132,18 @@ main {
   margin-bottom: 100px;
 }
 
+.techs {
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  font-family: var(--Font-Bold);
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+
 .line {
-  width: 100%;
+  width: 1110px;
 }
 
 .icons-container {
@@ -203,9 +222,15 @@ main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  height: 675px;
+  height: 550px;
   background-color: var(--Dark-Grey);
   display: flex;
+
+  background-image: url('./assets/pattern-rings.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: -205px;
+  background-position-y: 327px;
 }
 
 .contact {
@@ -295,9 +320,38 @@ textarea:focus {
   color: var(--White);
   border-bottom: 2px solid var(--Green);
   padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  font-family: var(--Font-Bold);
 }
 
 button:hover,
 button:focus {
   color: var(--Green);
+}
+
+footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 120px;
+  background-color: var(--Dark-Grey);
+}
+
+footer-container {
+  margin: 0 165px;
+  display: flex;
+  flex-direction: column;
+  color: var(--White);
+}
+
+.footer-container hr {
+  margin: 0 165px;
+}
+
+/*  ---------------------------------------- */
+
+.hidden {
+  display: none;
 }
