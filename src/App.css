@@ -353,3 +353,13 @@ footer-container {
 .link-hover:hover {
   color: var(--Green);
 }
+
+.error {
+  color: red;
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.17px;
+  margin: -25px 0 15px 0;
+  margin-top: -22px;
+}
