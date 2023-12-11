@@ -5,6 +5,7 @@ import { projects } from './assets/projects';
 import TechList from './components/TechList';
 import ContactForm from './components/ContactForm';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -85,34 +86,7 @@ function App() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-container">
-          <hr className="line" />
-          <div className="header-container">
-            <h4 className="title">
-              <a href="#home" target="_self" className="contact-link">
-                gilbertosilva
-              </a>
-            </h4>
-            <div className="icons">
-              <a
-                href="http://github.com/gilbertouk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={github} alt="Github icon" className="test" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gilbertoantonio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={linkedin} alt="LinkedIn icon" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
