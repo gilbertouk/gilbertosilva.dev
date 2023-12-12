@@ -15,7 +15,38 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="cards">
-      <img src={thumbnail} alt="print screen of project" />
+      <div className="cards-image">
+        <img
+          className="image-project"
+          src={thumbnail}
+          alt="print screen of project"
+        />
+        <div className="image-hover">
+          <div className="text-hover">
+            <h3>
+              <a
+                href={project.homepage}
+                target="_blank"
+                className="contact-link"
+                rel="noreferrer"
+              >
+                VIEW PROJECT
+              </a>
+            </h3>
+
+            <h3>
+              <a
+                href={project.html_url}
+                target="_blank"
+                className="contact-link"
+                rel="noreferrer"
+              >
+                VIEW CODE
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
 
       <h4>{project.name}</h4>
       <div className="card-tech">
