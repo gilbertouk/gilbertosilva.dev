@@ -16,7 +16,6 @@ function App() {
     fetchAllRepositories()
       .then((data) => {
         const repos = data.filter((repo) => repo.topics.length > 0);
-        console.log(repos);
 
         setRepositories(repos);
       })
