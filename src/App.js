@@ -6,8 +6,23 @@ import TechList from './components/TechList';
 import ContactForm from './components/ContactForm';
 import './App.css';
 import Footer from './components/Footer';
+import fetchAllRepositories from './utils/api';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(() => {
+    fetchAllRepositories()
+      .then((data) => {
+        const repos = data.filter((repo) => repo.topics.length > 0);
+        console.log(repos);
+
+        setRepositories(repos);
+      })
+      .catch((error) => console.log('error'));
+  }, []);
+
   return (
     <>
       <div className="container" id="home">
@@ -64,7 +79,7 @@ function App() {
             </p>
           </div>
           <div className="projects-cards">
-            {projects.map((project) => (
+            {repositories.map((project) => (
               <ProjectCard project={project} key={project.id} />
             ))}
           </div>
