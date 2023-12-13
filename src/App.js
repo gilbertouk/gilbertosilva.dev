@@ -68,7 +68,8 @@ function App() {
           <h2 className="techs">Techs</h2>
           <hr className="line" />
           <TechList />
-          <div className="projects-header about">
+          <hr className="line line-hidden" />
+          <div className="projects-header">
             <h2>Projects</h2>
             <p>
               <a href="#contact" target="_self" className="contact-link">

@@ -41,7 +41,7 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log('email sent', result.text, result.status);
+          // console.log('email sent', result.text, result.status);
 
           resetField('name');
           resetField('email');

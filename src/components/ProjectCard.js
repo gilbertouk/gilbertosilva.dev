@@ -58,6 +58,30 @@ const ProjectCard = ({ project }) => {
           ))}
         </ul>
       </div>
+
+      <div className="text-responsive">
+        <h3>
+          <a
+            href={project.homepage}
+            target="_blank"
+            className="contact-link"
+            rel="noreferrer"
+          >
+            VIEW PROJECT
+          </a>
+        </h3>
+
+        <h3>
+          <a
+            href={project.html_url}
+            target="_blank"
+            className="contact-link"
+            rel="noreferrer"
+          >
+            VIEW CODE
+          </a>
+        </h3>
+      </div>
     </div>
   );
 };

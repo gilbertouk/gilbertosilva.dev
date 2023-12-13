@@ -56,6 +56,10 @@
   color: var(--White);
 }
 
+.contact-link:hover {
+  color: var(--Green);
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -96,7 +100,6 @@ main {
   line-height: 88px;
   letter-spacing: -2.5px;
   font-family: var(--Font-Bold);
-  font-weight: 700;
   text-align: left;
   margin-bottom: 43px;
 }
@@ -110,7 +113,6 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: var(--Font-Medium);
-  font-weight: 400;
   color: var(--Grey);
   text-align: left;
 }
@@ -120,7 +122,6 @@ main {
   line-height: 26px;
   letter-spacing: 2.29px;
   font-family: var(--Font-Bold);
-  font-weight: 700;
   text-align: left;
   text-transform: uppercase;
   margin-top: 66px;
@@ -137,13 +138,16 @@ main {
   line-height: 88px;
   letter-spacing: -2.5px;
   font-family: var(--Font-Bold);
-  font-weight: 700;
   text-align: left;
   margin: 0;
 }
 
 .line {
   width: 1110px;
+}
+
+.line-hidden {
+  display: none;
 }
 
 .icons-container {
@@ -167,9 +171,26 @@ main {
   margin-bottom: 50px;
 }
 
+.projects-header h2 {
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  font-family: var(--Font-Bold);
+  text-align: left;
+}
+
 .projects-header p {
   border-bottom: solid 3px var(--Green);
   padding-bottom: 0.5rem;
+}
+
+.projects-header a {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  font-family: var(--Font-Medium);
+  color: var(--White);
+  text-transform: uppercase;
 }
 
 .projects-cards {
@@ -224,6 +245,10 @@ main {
   margin: 0;
   padding: 0;
   margin-right: 18px;
+}
+
+.text-responsive {
+  display: none;
 }
 
 .contact-container {
@@ -432,3 +457,189 @@ footer-container {
 }
 
 /* End project image hover */
+
+@media only screen and (max-width: 375px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  main {
+    margin: 0 16px;
+  }
+
+  .line {
+    width: 343px;
+  }
+
+  .line-hidden {
+    display: inline;
+  }
+
+  .container {
+    background-image: url('./assets/pattern-rings.svg'),
+      url('./assets/image-profile-desktop.jpeg'),
+      url('./assets/pattern-rings.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, 260px 383px, auto;
+    background-position-x: -342px, center, 173px;
+    background-position-y: 140px, -10px, 1400px;
+
+    background-color: var(--Black);
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-container .icons {
+    margin: 0;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .about h2 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    font-family: var(--Font-Bold);
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 43px;
+    width: auto;
+  }
+
+  .about h3 {
+    margin-top: 36px;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .about br {
+    display: none;
+  }
+
+  .techs {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+  }
+
+  .about-underline-contact {
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .about-underline-contact a {
+    padding-bottom: 10px;
+    border-bottom: solid 2px var(--Green);
+  }
+
+  .icons-container {
+    margin: 18px 0;
+  }
+
+  .projects-header {
+    margin-top: 48px;
+  }
+
+  .projects-header h2 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+  }
+
+  .cards {
+    height: auto;
+    width: 343px;
+    margin-bottom: 40px;
+  }
+
+  .cards img {
+    width: 343px;
+    height: 243px;
+  }
+
+  .cards h4 {
+    margin-top: 12px;
+  }
+
+  .cards-image:hover .image-project {
+    opacity: 1;
+  }
+
+  .cards-image:hover .image-hover {
+    opacity: 1;
+  }
+
+  .image-hover {
+    display: none;
+  }
+
+  .text-responsive {
+    display: inline-flex;
+    gap: 30px;
+  }
+
+  .text-responsive a {
+    font-family: var(--Font-Bold);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    border-bottom: solid 2px var(--Green);
+    padding-bottom: 10px;
+  }
+
+  .contact-container {
+    max-width: 375px;
+    height: auto;
+  }
+
+  .contact {
+    margin: 60px 16px 87px 16px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-description {
+    width: auto;
+  }
+
+  .contact-description h2 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    text-align: center;
+  }
+
+  .contact-description p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: auto;
+  }
+
+  footer {
+    max-width: 375px;
+    height: auto;
+    padding-bottom: 24px;
+  }
+
+  .footer-container hr {
+    margin: 0 16px 39px 16px;
+  }
+
+  .contact-link:visited {
+    color: var(--White);
+  }
+}
