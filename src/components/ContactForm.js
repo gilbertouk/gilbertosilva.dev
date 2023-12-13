@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import emailjs from '@emailjs/browser';
 import * as yup from 'yup';
 
 const ContactForm = () => {
@@ -25,10 +26,31 @@ const ContactForm = () => {
   });
 
   const onSubmit = (data) => {
-    // console.log(data);
-    resetField('name');
-    resetField('email');
-    resetField('message');
+    const templateParams = {
+      from_name: data.name,
+      message: data.message,
+      email: data.email,
+    };
+
+    emailjs
+      .send(
+        'service_c5oueab',
+        'template_tz6qyyj',
+        templateParams,
+        '1hHyfPeHUq1pFxxJh',
+      )
+      .then(
+        (result) => {
+          console.log('email sent', result.text, result.status);
+
+          resetField('name');
+          resetField('email');
+          resetField('message');
+        },
+        (error) => {
+          console.log('error', error, error.text);
+        },
+      );
   };
 
   return (

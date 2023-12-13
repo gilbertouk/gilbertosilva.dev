@@ -1,7 +1,6 @@
 import github from './assets/icon-github.svg';
 import linkedin from './assets/icon-linkedin.svg';
 import ProjectCard from './components/ProjectCard';
-import { projects } from './assets/projects';
 import TechList from './components/TechList';
 import ContactForm from './components/ContactForm';
 import './App.css';
