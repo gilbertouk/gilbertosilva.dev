@@ -31,8 +31,9 @@
 }
 
 .container {
-  max-width: 1440px;
   width: 100%;
+  max-width: 1440px;
+  padding: 0 165px;
   margin: 0 auto;
 
   background-image: url('./assets/pattern-rings.svg'),
@@ -65,7 +66,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 165px;
 }
 
 .title {
@@ -85,7 +85,7 @@
 }
 
 main {
-  margin: -33px 165px;
+  margin-top: -33px;
   display: flex;
   flex-direction: column;
   color: var(--White);
@@ -143,7 +143,7 @@ main {
 }
 
 .line {
-  width: 1110px;
+  width: 100%;
 }
 
 .line-hidden {
@@ -253,12 +253,10 @@ main {
 
 .contact-container {
   max-width: 1440px;
+  padding: 0 165px;
   width: 100%;
   margin: 0 auto;
-  height: 550px;
   background-color: var(--Dark-Grey);
-  display: flex;
-
   background-image: url('./assets/pattern-rings.svg');
   background-repeat: no-repeat;
   background-size: auto;
@@ -267,19 +265,16 @@ main {
 }
 
 .contact {
-  margin: 0 165px;
-  margin-top: 84px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  height: 327px;
-  width: 1110px;
+  padding-top: 84px;
+  gap: 220px;
+  padding-bottom: 92px;
 }
 
 .contact-description {
-  width: 445px;
+  flex-basis: 50%;
   color: var(--White);
 }
 
@@ -300,7 +295,7 @@ main {
 }
 
 .form-container {
-  width: 445px;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -366,21 +361,19 @@ button:focus {
 
 footer {
   max-width: 1440px;
-  width: 100%;
+  padding: 0 165px;
   margin: 0 auto;
-  height: 120px;
   background-color: var(--Dark-Grey);
 }
 
 footer-container {
-  margin: 0 165px;
   display: flex;
   flex-direction: column;
   color: var(--White);
 }
 
 .footer-container hr {
-  margin: 0 165px;
+  margin: 0;
 }
 
 .link-hover:hover {
@@ -458,117 +451,87 @@ footer-container {
 
 /* End project image hover */
 
-@media only screen and (max-width: 375px) {
+/* TABLET */
+@media only screen and (max-width: 768px) {
   *,
   ::after,
   ::before {
     box-sizing: border-box;
   }
 
-  main {
-    margin: 0 16px;
-  }
-
-  .line {
-    width: 343px;
-  }
-
-  .line-hidden {
-    display: inline;
-  }
-
   .container {
+    max-width: 768px;
+    padding: 0 32px;
+
     background-image: url('./assets/pattern-rings.svg'),
       url('./assets/image-profile-desktop.jpeg'),
       url('./assets/pattern-rings.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, 260px 383px, auto;
-    background-position-x: -342px, center, 173px;
-    background-position-y: 140px, -10px, 1400px;
+    background-size: auto, 45vw 600px, auto;
+    background-position-x: -342px, right, 70vw;
+    background-position-y: 100px, -10px, 1347px;
 
     background-color: var(--Black);
   }
 
+  .contact-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  footer {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
   .header-container {
-    flex-direction: column;
-  }
-
-  .header-container .icons {
     margin: 0;
+    padding-top: 29px;
   }
 
-  .title {
-    margin: 10px 0;
-  }
-
-  .about h2 {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.14px;
-    font-family: var(--Font-Bold);
-    text-align: center;
-    margin-top: 210px;
-    margin-bottom: 43px;
-    width: auto;
-  }
-
-  .about h3 {
-    margin-top: 36px;
-  }
-
-  .about p {
-    text-align: center;
+  .about {
+    margin-top: 18px;
+    width: 60vw;
   }
 
   .about br {
     display: none;
   }
 
-  .techs {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.14px;
+  .about h2 {
+    font-size: 72px;
   }
 
-  .about-underline-contact {
-    display: flex;
-    border: none;
-    justify-content: center;
-    margin-bottom: 100px;
-  }
-
-  .about-underline-contact a {
-    padding-bottom: 10px;
-    border-bottom: solid 2px var(--Green);
-  }
-
-  .icons-container {
-    margin: 18px 0;
+  .techs,
+  .projects-header h2,
+  .contact-description h2 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
   }
 
   .projects-header {
-    margin-top: 48px;
+    margin: 0;
   }
 
-  .projects-header h2 {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.14px;
+  .projects-cards {
+    gap: 1rem;
+  }
+
+  .projects-cards {
+    justify-content: space-around;
   }
 
   .cards {
-    height: auto;
-    width: 343px;
-    margin-bottom: 40px;
+    max-width: 342px;
+    height: 398px;
+    width: auto;
+    flex-basis: 42vw;
   }
 
   .cards img {
-    width: 343px;
-    height: 243px;
-  }
-
-  .cards h4 {
-    margin-top: 12px;
+    width: 100%;
+    height: 253px;
   }
 
   .cards-image:hover .image-project {
@@ -597,26 +560,137 @@ footer-container {
     padding-bottom: 10px;
   }
 
-  .contact-container {
-    max-width: 375px;
-    height: auto;
-  }
-
   .contact {
-    margin: 60px 16px 87px 16px;
+    margin: 0 auto;
     flex-direction: column;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    gap: 48px;
   }
 
   .contact-description {
-    width: auto;
+    text-align: center;
   }
 
-  .contact-description h2 {
+  .header-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 430px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  .line-hidden {
+    display: inline;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 430px;
+    margin: 0 auto;
+
+    background-image: url('./assets/pattern-rings.svg'),
+      url('./assets/image-profile-desktop.jpeg'),
+      url('./assets/pattern-rings.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, 65vw 383px, auto;
+    background-position-x: -400px, center, 173px;
+    background-position-y: 140px, -10px, 1400px;
+
+    background-color: var(--Black);
+  }
+
+  .contact-container {
+    max-width: 430px;
+    padding: 0 32px;
+  }
+
+  footer {
+    max-width: 430px;
+    padding: 0 32px;
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 320px;
+  }
+
+  .about h2 {
+    text-align: center;
+    margin-bottom: 43px;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .about br {
+    display: none;
+  }
+
+  .techs,
+  .projects-header h2,
+  .about h2,
+  contact-description h2 {
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -1.14px;
-    text-align: center;
+  }
+
+  .about-underline-contact {
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .about-underline-contact a {
+    padding-bottom: 10px;
+    border-bottom: solid 2px var(--Green);
+  }
+
+  .icons-container {
+    margin: 18px 0;
+    gap: 1.5rem;
+  }
+
+  .projects-header {
+    margin-top: 48px;
+  }
+
+  .cards {
+    height: auto;
+    width: 343px;
+    margin-bottom: 40px;
+  }
+
+  .cards img {
+    width: 343px;
+    height: 243px;
+  }
+
+  .cards h4 {
+    margin-top: 12px;
+  }
+
+  .contact-container {
+    background-image: url('./assets/pattern-rings.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: -359px;
+    background-position-y: 650px;
+  }
+
+  .contact {
+    padding-top: 60px;
+    width: 80vw;
   }
 
   .contact-description p {
@@ -626,20 +700,26 @@ footer-container {
   }
 
   .form-container {
-    width: auto;
+    margin-top: 24px;
+  }
+
+  .form-container input {
+    font-size: 16px;
+  }
+
+  .form-container textarea {
+    font-size: 16px;
   }
 
   footer {
-    max-width: 375px;
-    height: auto;
     padding-bottom: 24px;
-  }
-
-  .footer-container hr {
-    margin: 0 16px 39px 16px;
   }
 
   .contact-link:visited {
     color: var(--White);
+  }
+
+  .icons {
+    margin: 0;
   }
 }

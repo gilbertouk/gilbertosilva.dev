@@ -26,7 +26,7 @@ function App() {
       <div className="container" id="home">
         <header>
           <div className="header-container">
-            <h1 className="title">gilbertosilva</h1>
+            <h1 className="title title-hidden">gilbertosilva</h1>
             <div className="icons">
               <a
                 href="http://github.com/gilbertouk"
@@ -49,7 +49,7 @@ function App() {
           <div className="about">
             <h2>
               Nice to meet you! <br /> I'm{' '}
-              <span className="about-underline">Gilberto Silva</span>.
+              <strong className="about-underline">Gilberto Silva</strong>.
             </h2>
             <p>
               Based in London, UK, I'm a Junior Full-Stack Developer <br />
