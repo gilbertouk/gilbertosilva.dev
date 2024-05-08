@@ -1,12 +1,12 @@
-import github from './assets/icon-github.svg';
-import linkedin from './assets/icon-linkedin.svg';
-import ProjectCard from './components/ProjectCard';
-import TechList from './components/TechList';
-import ContactForm from './components/ContactForm';
-import './App.css';
-import Footer from './components/Footer';
-import fetchAllRepositories from './utils/api';
-import { useEffect, useState } from 'react';
+import github from "./assets/icon-github.svg";
+import linkedin from "./assets/icon-linkedin.svg";
+import ProjectCard from "./components/ProjectCard";
+import TechList from "./components/TechList";
+import ContactForm from "./components/ContactForm";
+import "./App.css";
+import Footer from "./components/Footer";
+import fetchAllRepositories from "./utils/api";
+import { useEffect, useState } from "react";
 
 function App() {
   const [repositories, setRepositories] = useState([]);
@@ -18,7 +18,7 @@ function App() {
 
         setRepositories(repos);
       })
-      .catch((error) => console.log('error'));
+      .catch((error) => console.log("error"));
   }, []);
 
   return (
@@ -48,11 +48,11 @@ function App() {
         <main>
           <div className="about">
             <h2>
-              Nice to meet you! <br /> I'm{' '}
+              Nice to meet you! <br /> I'm{" "}
               <strong className="about-underline">Gilberto Silva</strong>.
             </h2>
             <p>
-              Based in London, UK, I'm a Junior Full-Stack Developer <br />
+              Based in London, UK, I'm a Full-Stack Developer <br />
               focused on the back-end, passionate about building web apps <br />
               that users love.
             </p>
