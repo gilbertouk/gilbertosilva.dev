@@ -1,14 +1,14 @@
 @import-normalize;
 
 @font-face {
-  font-family: 'SpaceGrotesk-Medium';
-  src: url('./assets/fonts/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-family: "SpaceGrotesk-Medium";
+  src: url("./assets/fonts/SpaceGrotesk-Medium.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk-Bold';
-  src: url('./assets/fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-family: "SpaceGrotesk-Bold";
+  src: url("./assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -18,8 +18,8 @@
   --Green: #4ee1a0;
   --Grey: #d9d9d9;
   --White: #ffffff;
-  --Font-Medium: 'SpaceGrotesk-Medium';
-  --Font-Bold: 'SpaceGrotesk-Bold';
+  --Font-Medium: "SpaceGrotesk-Medium";
+  --Font-Bold: "SpaceGrotesk-Bold";
   --self-image-w: 540px;
   --self-image-h: 720px;
 }
@@ -36,9 +36,9 @@
   padding: 0 165px;
   margin: 0 auto;
 
-  background-image: url('./assets/pattern-rings.svg'),
-    url('./assets/image-profile-desktop.jpeg'),
-    url('./assets/pattern-rings.svg');
+  background-image: url("./assets/pattern-rings.svg"),
+    url("./assets/image-profile-desktop.jpeg"),
+    url("./assets/pattern-rings.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto, var(--self-image-w) var(--self-image-h), auto;
   background-position-x: -100px, calc(1440px - var(--self-image-w) - 165px),
@@ -257,7 +257,7 @@ main {
   width: 100%;
   margin: 0 auto;
   background-color: var(--Dark-Grey);
-  background-image: url('./assets/pattern-rings.svg');
+  background-image: url("./assets/pattern-rings.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: -205px;
@@ -463,9 +463,9 @@ footer-container {
     max-width: 768px;
     padding: 0 32px;
 
-    background-image: url('./assets/pattern-rings.svg'),
-      url('./assets/image-profile-desktop.jpeg'),
-      url('./assets/pattern-rings.svg');
+    background-image: url("./assets/pattern-rings.svg"),
+      url("./assets/image-profile-desktop.jpeg"),
+      url("./assets/pattern-rings.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, 45vw 600px, auto;
     background-position-x: -342px, right, 70vw;
@@ -596,9 +596,9 @@ footer-container {
     max-width: 430px;
     margin: 0 auto;
 
-    background-image: url('./assets/pattern-rings.svg'),
-      url('./assets/image-profile-desktop.jpeg'),
-      url('./assets/pattern-rings.svg');
+    background-image: url("./assets/pattern-rings.svg"),
+      url("./assets/image-profile-desktop.jpeg"),
+      url("./assets/pattern-rings.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, 65vw 383px, auto;
     background-position-x: -400px, center, 173px;
@@ -681,7 +681,7 @@ footer-container {
   }
 
   .contact-container {
-    background-image: url('./assets/pattern-rings.svg');
+    background-image: url("./assets/pattern-rings.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: -359px;
