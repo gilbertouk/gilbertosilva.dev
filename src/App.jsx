@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import fetchAllRepositories from "./utils/api";
 import { useEffect, useState } from "react";
 
-function App() {
+const App = () => {
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
@@ -48,11 +48,11 @@ function App() {
         <main>
           <div className="about">
             <h2>
-              Nice to meet you! <br /> I'm{" "}
+              Nice to meet you! <br /> I&apos;m{" "}
               <strong className="about-underline">Gilberto Silva</strong>.
             </h2>
             <p>
-              Based in London, UK, I'm a Full-Stack Developer <br />
+              Based in London, UK, I&apos;m a Full-Stack Developer <br />
               focused on the back-end, passionate about building web apps <br />
               that users love.
             </p>
@@ -90,7 +90,7 @@ function App() {
             <h2>Contact</h2>
             <p>
               I would love to hear about your project and how I could help.
-              Please fill in the form, and I'll get back to you as soon as
+              Please fill in the form, and I&apos;ll get back to you as soon as
               possible.
             </p>
           </div>
@@ -103,6 +103,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

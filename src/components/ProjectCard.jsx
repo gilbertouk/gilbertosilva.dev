@@ -1,16 +1,16 @@
 const ProjectCard = ({ project }) => {
-  let thumbnail = '';
+  let thumbnail = "";
 
-  if (project.topics.includes('backend')) {
+  if (project.topics.includes("backend")) {
     const random = (Math.random() * 1).toFixed(0);
 
-    if (random === '0') {
-      thumbnail = './projects-image/thumbnail-restapi.png';
+    if (random === "0") {
+      thumbnail = "./projects-image/thumbnail-restapi.png";
     } else {
-      thumbnail = './projects-image/thumbnail-restapi1.png';
+      thumbnail = "./projects-image/thumbnail-restapi1.png";
     }
   } else {
-    thumbnail = './projects-image/thumbnail-' + project.name + '.jpeg';
+    thumbnail = "./projects-image/thumbnail-" + project.name + ".jpeg";
   }
 
   return (
